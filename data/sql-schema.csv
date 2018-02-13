@@ -1,0 +1,18 @@
+Database,Tables,Columns,Value type,Notes
+EDW_ACCESS_VIEWS,BI_VISIT,VISIT_ID,DECIMAL,Primary Unique Key - ID for individual browsing sessions on website
+EDW_ACCESS_VIEWS,BI_VISIT,VISITOR_ID,DECIMAL,ID for individuals on website
+EDW_ACCESS_VIEWS,BI_VISIT,VISIT_DT,DATE,Date of visit to website
+EDW_ACCESS_VIEWS,BI_VISIT,FIRST_PAGE_VIEW_CAMPAIGN_ID,DECIMAL,Campaign ID for the first webpage a visit views.  The campaign that drove the visitor to view the website.
+EDW_ACCESS_VIEWS,BI_VISIT,PAGE_VIEW_COUNT,INTEGER,A count of pages viewed in a given visit
+EDW_ACCESS_VIEWS,BI_SALES,SALES_TANSACTION_ID,INTEGER,ID for individual sale transactions
+EDW_ACCESS_VIEWS,BI_SALES,SALES_TRANSACTION_LINE_ID,INTEGER,Primary Unique Key - ID for individual items purchased in a sale transaction
+EDW_ACCESS_VIEWS,BI_SALES,SALES_TAANSACTION_CAMPAIGN_ID,DECIMAL,The last campaign a visit clicked through before the given transaction
+EDW_ACCESS_VIEWS,BI_SALES,REVENUE_TOP_LINE,DECIMAL,Top line revenue for a transaction
+EDW_ACCESS_VIEWS,BI_SALES,REVENUE_BOTTOM_LINE,DECIMAL,Bottom line revenue for a transaction
+EDW_ACCESS_VIEWS,BI_SALES,VISIT_ID,DECIMAL,ID for individual browsing sessions on website
+EDW_ACCESS_VIEWS,BI_SALES,PRODUCT_ID,DECIMAL,ID for item purchased
+EDW_ACCESS_VIEWS,BI_SALES,DEPARTMENT,SMALLINT,Department of the product in a given transaction
+EDW_ACCESS_VIEWS,BI_SALES,SALES_TRANSACTION_DATE,DATE,Date of sale
+EDW_ACCESS_VIEWS,BI_CAMPAIGN_DESCRIPTION,CAMPAIGN_ID,DECIMAL,Primary Unique Key - Campaign ID for each marketing campaign run
+EDW_ACCESS_VIEWS,BI_CAMPAIGN_DESCRIPTION,CAMPAIGN_DESCRIPTION,VARCHAR,Description of the campaign
+EDW_ACCESS_VIEWS,BI_CAMPAIGN_DESCRIPTION,CHANNEL_DESCRIPTION,VARCHAR,Marketing channel the campaign belongs to
